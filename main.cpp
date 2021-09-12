@@ -22,6 +22,9 @@ using namespace std;
 int main() {
     fstream infile;
     infile.open("../Romeo_Juliet.txt");
+    if (!infile){
+        cerr<<"error opening file"<<endl;
+    }
    string user_word {};
    string word;
    int words_count = 0;
@@ -41,5 +44,5 @@ int main() {
    cout<<searched_words<<" were searched."<<endl;
    cout<<"The substring "<<user_word<<" was found "<<words_count<<" times"<<endl;
 
-
+infile.close();
 }

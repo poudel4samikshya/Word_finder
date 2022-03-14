@@ -7,6 +7,7 @@
 using namespace std;
 
 int main() {
+    
     fstream infile;
     infile.open("../Romeo_Juliet.txt");
     if (!infile){
@@ -16,9 +17,13 @@ int main() {
    string word;
    int words_count = 0;
    int searched_words = 0;
+    
+    //prompting user to enter the word
 
    cout<<"Enter the substring to search for:  "<<user_word<<endl;
    cin>>user_word;
+    
+    //reading through the file and check the word
    while(infile>>word){
        bool value = word_checker(word,user_word);
        searched_words++;

@@ -15,3 +15,5 @@ counting given word in the file
  * enter the substring to search for : love
  * 25919 words were searched
  * The substring love was found 171 times
+
+The main purpose of this project is to learn the fundamentals of use of file in a program such importing, reading, extracting file content. Also, to learn syntax and semanntics of file operation in C++.
